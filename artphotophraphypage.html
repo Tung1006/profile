@@ -10,8 +10,12 @@
       height: 100%;
     }
     body {
+      display: flex;
+      flex-direction: column;
       padding-top: 80px;
-      padding-bottom: 100px; /* Ensure footer is always visible at the bottom */
+    }
+    .main-content {
+      flex: 1;
     }
     .card-img-top {
       height: 250px;
@@ -31,13 +35,6 @@
       height: auto;
       margin: 1rem 0;
       border-radius: 8px;
-    }
-    footer {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      background-color: #343a40;
-      color: white;
     }
   </style>
 </head>
@@ -76,60 +73,80 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">CONTACT</a>
+            <a class="nav-link" href="CONTACT.html">CONTACT</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Nội dung liên hệ -->
-  <div class="container py-5" style="margin-top: 100px;">
-    <h1 class="fw-bold mb-4">📬 CONTACT</h1>
-    <h4> Minh Anh Nguyen got a Bachelor Degree in Mathematics from Bennington College and is pursuing a Master Degree in Data Analytics from Catholic University of America. She is from Hanoi, Vietnam. She has extensive experiences living in Bennington, Vermont, USA and Washington, District of Columbia, USA.
-      She is looking for internships as a data analyst and in the field of machine learning/deep learning research.</h4>
-      <hr class="my-5">
-    <div>
-      <p><strong>📧 Email:</strong> ngminhahn@gmail.com, nguyenam@cua.edu</p>
-      <p><strong>📱 Phone:</strong> 202-860-8588</p>
-      <p><strong>🌐 Social network:</strong>
-        <a href="https://facebook.com/" target="_blank">Facebook</a> |
-        <a href="https://linkedin.com/" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/" target="_blank">GitHub</a>
-      </p>
+  <main class="container main-content">
+    <div class="text-center section-name mb-5">
+      <h2 class="section-title">ART</h2>
     </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-<footer class="bg-dark text-light mt-5">
-  <div class="container py-4">
-    <div class="row text-center text-md-start">
-      <div class="col-md-6 mb-3 mb-md-0">
-        <h5 class="fw-bold">Minh Anh Nguyen</h5>
-        <p class="mb-0">📧 minh.anh@email.com</p>
-        <p class="mb-0">📍 Based in Vietnam</p>
+  
+    <div class="row g-4">
+      <!-- Image 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/IMG_1028.jpeg" class="card-img-top" alt="Flowers in a flower shop - Saigon">
+          <div class="card-body">
+            <p class="card-text text-muted text-center">Flowers in a flower shop - Saigon</p>
+          </div>
+        </div>
       </div>
-      <div class="col-md-6 d-flex align-items-center justify-content-center justify-content-md-end">
-        <div>
-          <a href="https://www.linkedin.com/" class="text-light me-3" target="_blank">
-            <i class="bi bi-linkedin"></i> LinkedIn
-          </a>
-          <a href="https://github.com/" class="text-light me-3" target="_blank">
-            <i class="bi bi-github"></i> GitHub
-          </a>
-          <a href="CONTACT.html" class="text-light">
-            <i class="bi bi-envelope"></i> Contact
-          </a>
+  
+      <!-- Image 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/IMG_1338.png" class="card-img-top" alt="Architecture - Vermont">
+          <div class="card-body">
+            <p class="card-text text-muted text-center">Architecture - Vermont</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Image 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/IMG_0116.jpeg" class="card-img-top" alt="White Blooms - New York City">
+          <div class="card-body">
+            <p class="card-text text-muted text-center">White Blooms - New York City</p>
+          </div>
         </div>
       </div>
     </div>
-    <hr class="border-secondary my-3">
-    <div class="text-center small">
-      © 2025 Minh Anh Nguyen. All rights reserved.
-    </div>
-  </div>
-</footer>
+  </main>
 
+  <footer class="bg-dark text-light mt-5">
+    <div class="container py-4">
+      <div class="row text-center text-md-start">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <h5 class="fw-bold">Minh Anh Nguyen</h5>
+          <p class="mb-0">📧 minh.anh@email.com</p>
+          <p class="mb-0">📍 Based in Vietnam</p>
+        </div>
+        <div class="col-md-6 d-flex align-items-center justify-content-center justify-content-md-end">
+          <div>
+            <a href="https://www.linkedin.com/" class="text-light me-3" target="_blank">
+              <i class="bi bi-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/" class="text-light me-3" target="_blank">
+              <i class="bi bi-github"></i> GitHub
+            </a>
+            <a href="CONTACT.html" class="text-light">
+              <i class="bi bi-envelope"></i> Contact
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary my-3">
+      <div class="text-center small">
+        © 2025 Minh Anh Nguyen. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
